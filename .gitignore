@@ -1,0 +1,11 @@
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/build/
+
+# Local storage, uploads, cache
+**/storage/
+
+# Logs
+*.log
