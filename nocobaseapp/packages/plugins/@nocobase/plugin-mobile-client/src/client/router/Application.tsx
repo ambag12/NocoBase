@@ -7,7 +7,8 @@
  * For more information, please refer to: https://www.nocobase.com/agreement.
  */
 
-import { ActionContextProvider, AdminProvider, css, cx, RemoteSchemaComponent, useViewport } from '@nocobase/client';
+import { ActionContextProvider, AdminProvider, css, cx, RemoteSchemaComponent, useViewport, GlobalThemeProvider } from '@nocobase/client';
+import { theme } from 'antd';
 import { DrawerProps, ModalProps } from 'antd';
 import React, { useMemo } from 'react';
 import { Outlet, useParams } from 'react-router-dom';
@@ -93,6 +94,28 @@ const MApplication: React.FC = (props) => {
   return (
     <Provider>
       <MobileCore>
+        <GlobalThemeProvider
+          theme={{
+            token: {
+              // mobile client override: forest green accents on white base
+              colorPrimary: '#228B22',
+              colorBgBase: '#ffffff',
+              colorText: '#101828',
+              colorBorder: '#E5E7EB',
+              colorLink: '#228B22',
+              colorLinkHover: '#1c6e1c',
+              colorPrimaryBg: '#eff8ee',
+              colorPrimaryBgHover: '#e5f3e4',
+              colorPrimaryHover: '#1f7a1f',
+              colorPrimaryActive: '#186018',
+              borderRadius: 10,
+              borderRadiusLG: 12,
+              controlHeight: 36,
+              controlHeightLG: 40,
+            },
+            algorithm: theme.compactAlgorithm,
+          }}
+        >
         <OpenInNewTab />
         <ActionContextProvider modalProps={modalProps as ModalProps} drawerProps={drawerProps}>
           <div
@@ -122,6 +145,7 @@ const MApplication: React.FC = (props) => {
             <div id="nb-position-container"></div>
           </div>
         </ActionContextProvider>
+        </GlobalThemeProvider>
       </MobileCore>
     </Provider>
   );

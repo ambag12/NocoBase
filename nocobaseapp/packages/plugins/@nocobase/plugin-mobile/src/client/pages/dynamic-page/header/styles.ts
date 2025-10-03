@@ -13,4 +13,6 @@ export const mobilePageHeaderStyle: any = {
   right: 0,
   borderBottom: '1px solid var(--adm-color-border)',
   backgroundColor: 'var(--adm-color-background)',
+  // elevate header slightly for a Slack-like feel
+  boxShadow: '0 2px 12px rgba(0,0,0,0.05)',
 };

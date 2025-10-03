@@ -15,8 +15,10 @@ export const useStyles = genStyleHook('nb-mobile-page-navigation-bar', (token) =
     [componentCls]: {
       '.adm-nav-bar': {
         maxWidth: '100%',
-        height: 49,
+        height: 56,
         overflow: 'hidden',
+        backgroundColor: token.colorBgBase,
+        borderBottom: `1px solid ${token.colorBorder}`,
 
         '.adm-nav-bar-left': {
           display: 'flex',
@@ -27,6 +29,15 @@ export const useStyles = genStyleHook('nb-mobile-page-navigation-bar', (token) =
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-end',
+        },
+
+        '.adm-nav-bar-title': {
+          fontWeight: 700,
+          color: token.colorText,
+        },
+
+        'button, .ant-btn': {
+          color: token.colorPrimary,
         },
       },
     },
