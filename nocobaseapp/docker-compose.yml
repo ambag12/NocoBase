@@ -110,7 +110,9 @@ services:
       - ${ADMINER_PORT}:8080
 
   nocobase:
-    image: nocobase/nocobase:latest
+    build:
+      context: .   
+      dockerfile: Dockerfile
     restart: always
     networks:
       - nocobase
@@ -126,4 +128,5 @@ services:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
     volumes:
+      - ./:/app                
       - ./storage/app:/app/storage
