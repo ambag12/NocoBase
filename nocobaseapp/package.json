@@ -3,6 +3,8 @@
   "private": true,
   "workspaces": [
     "packages/*/*",
+    "packages/*/*/*",
+    "packages/*/*",
     "packages/*/*/*"
   ],
   "license": "AGPL-3.0",
@@ -54,10 +56,14 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "nwsapi": "2.2.7",
-    "antd": "5.24.2",
+    "antd": "5.12.8",
     "@formily/antd-v5": "1.2.3",
     "dayjs": "1.11.13",
-    "@ant-design/icons": "^5.6.1"
+    "@ant-design/icons": "^5.6.1",
+    "cytoscape": "3.28.0",
+    "async": "^3.2.6",
+    "rollup": "4.24.0",
+    "semver": "^7.7.1"
   },
   "config": {
     "ghooks": {
@@ -97,5 +103,11 @@
     "node": "20.14.0",
     "yarn": "1.22.19"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pm2": "^6.0.5",
+    "mysql2": "^3.14.0",
+    "mariadb": "^2.5.6",
+    "pg": "^8.14.1",
+    "pg-hstore": "^2.3.4"
+  }
 }
