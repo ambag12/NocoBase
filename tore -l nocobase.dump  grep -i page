@@ -1,0 +1,146 @@
+;
+; Archive created at 2025-09-24 11:58:53
+;     dbname: nocobase
+;     TOC Entries: 569
+;     Compression: gzip
+;     Dump Version: 1.16-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 17.6
+;     Dumped by pg_dump version: 17.6
+;
+;
+; Selected TOC Entries:
+;
+5; 2615 2200 SCHEMA - public nocobase
+360; 1259 26405 TABLE public Comments nocobase
+359; 1259 26404 SEQUENCE public Comments_id_seq nocobase
+5854; 0 0 SEQUENCE OWNED BY public Comments_id_seq nocobase
+302; 1259 25046 TABLE public users nocobase
+301; 1259 25045 SEQUENCE public users_id_seq nocobase
+5855; 0 0 SEQUENCE OWNED BY public users_id_seq nocobase
+344; 1259 26159 TABLE public Department nocobase
+343; 1259 26158 SEQUENCE public Department_id_seq nocobase
+5856; 0 0 SEQUENCE OWNED BY public Department_id_seq nocobase
+350; 1259 26270 TABLE public Department_x_Users nocobase
+356; 1259 26338 TABLE public Messages nocobase
+357; 1259 26379 SEQUENCE public Messages_ID_seq nocobase
+5857; 0 0 SEQUENCE OWNED BY public Messages_ID_seq nocobase
+358; 1259 26388 SEQUENCE public Messages_Msg_ID_seq nocobase
+5858; 0 0 SEQUENCE OWNED BY public Messages_Msg_ID_seq nocobase
+353; 1259 26306 TABLE public Task_x_Project nocobase
+336; 1259 25301 TABLE public projects nocobase
+335; 1259 25300 SEQUENCE public projects_id_seq nocobase
+5859; 0 0 SEQUENCE OWNED BY public projects_id_seq nocobase
+352; 1259 26291 TABLE public Tasks nocobase
+351; 1259 26290 SEQUENCE public Tasks_id_seq nocobase
+5860; 0 0 SEQUENCE OWNED BY public Tasks_id_seq nocobase
+233; 1259 24585 TABLE public applicationPlugins nocobase
+232; 1259 24584 SEQUENCE public applicationPlugins_id_seq nocobase
+5861; 0 0 SEQUENCE OWNED BY public applicationPlugins_id_seq nocobase
+235; 1259 24598 TABLE public applicationVersion nocobase
+234; 1259 24597 SEQUENCE public applicationVersion_id_seq nocobase
+5862; 0 0 SEQUENCE OWNED BY public applicationVersion_id_seq nocobase
+337; 1259 25318 TABLE public applications nocobase
+277; 1259 24881 TABLE public attachments nocobase
+5863; 0 0 COMMENT public COLUMN attachments.title nocobase
+5864; 0 0 COMMENT public COLUMN attachments.filename nocobase
+5865; 0 0 COMMENT public COLUMN attachments.extname nocobase
+5866; 0 0 COMMENT public COLUMN attachments.size nocobase
+5867; 0 0 COMMENT public COLUMN attachments.path nocobase
+5868; 0 0 COMMENT public COLUMN attachments.meta nocobase
+5869; 0 0 COMMENT public COLUMN attachments.url nocobase
+276; 1259 24880 SEQUENCE public attachments_id_seq nocobase
+5870; 0 0 SEQUENCE OWNED BY public attachments_id_seq nocobase
+247; 1259 24671 TABLE public authenticators nocobase
+246; 1259 24670 SEQUENCE public authenticators_id_seq nocobase
+5871; 0 0 SEQUENCE OWNED BY public authenticators_id_seq nocobase
+333; 1259 25268 TABLE public blockTemplateLinks nocobase
+332; 1259 25267 SEQUENCE public blockTemplateLinks_id_seq nocobase
+5872; 0 0 SEQUENCE OWNED BY public blockTemplateLinks_id_seq nocobase
+334; 1259 25279 TABLE public blockTemplates nocobase
+270; 1259 24833 TABLE public collectionCategories nocobase
+269; 1259 24832 SEQUENCE public collectionCategories_id_seq nocobase
+5873; 0 0 SEQUENCE OWNED BY public collectionCategories_id_seq nocobase
+272; 1259 24854 TABLE public collectionCategory nocobase
+271; 1259 24842 TABLE public collections nocobase
+244; 1259 24655 TABLE public customRequests nocobase
+245; 1259 24662 TABLE public customRequestsRoles nocobase
+267; 1259 24816 TABLE public dataSources nocobase
+258; 1259 24751 TABLE public dataSourcesCollections nocobase
+259; 1259 24760 TABLE public dataSourcesFields nocobase
+266; 1259 24807 TABLE public dataSourcesRoles nocobase
+265; 1259 24796 TABLE public dataSourcesRolesResources nocobase
+261; 1259 24772 TABLE public dataSourcesRolesResourcesActions nocobase
+260; 1259 24771 SEQUENCE public dataSourcesRolesResourcesActions_id_seq nocobase
+5874; 0 0 SEQUENCE OWNED BY public dataSourcesRolesResourcesActions_id_seq nocobase
+263; 1259 24785 TABLE public dataSourcesRolesResourcesScopes nocobase
+262; 1259 24784 SEQUENCE public dataSourcesRolesResourcesScopes_id_seq nocobase
+5875; 0 0 SEQUENCE OWNED BY public dataSourcesRolesResourcesScopes_id_seq nocobase
+264; 1259 24795 SEQUENCE public dataSourcesRolesResources_id_seq nocobase
+5876; 0 0 SEQUENCE OWNED BY public dataSourcesRolesResources_id_seq nocobase
+255; 1259 24730 TABLE public desktopRoutes nocobase
+254; 1259 24729 SEQUENCE public desktopRoutes_id_seq nocobase
+5877; 0 0 SEQUENCE OWNED BY public desktopRoutes_id_seq nocobase
+268; 1259 24825 TABLE public environmentVariables nocobase
+311; 1259 25126 TABLE public executions nocobase
+310; 1259 25125 SEQUENCE public executions_id_seq nocobase
+5878; 0 0 SEQUENCE OWNED BY public executions_id_seq nocobase
+273; 1259 24860 TABLE public fields nocobase
+313; 1259 25138 TABLE public flow_nodes nocobase
+312; 1259 25137 SEQUENCE public flow_nodes_id_seq nocobase
+5879; 0 0 SEQUENCE OWNED BY public flow_nodes_id_seq nocobase
+253; 1259 24721 TABLE public iframeHtml nocobase
+248; 1259 24685 TABLE public issuedTokens nocobase
+314; 1259 25150 TABLE public jobs nocobase
+326; 1259 25227 TABLE public llmServices nocobase
+339; 1259 25333 TABLE public localizationTexts nocobase
+338; 1259 25332 SEQUENCE public localizationTexts_id_seq nocobase
+5880; 0 0 SEQUENCE OWNED BY public localizationTexts_id_seq nocobase
+341; 1259 25344 TABLE public localizationTranslations nocobase
+340; 1259 25343 SEQUENCE public localizationTranslations_id_seq nocobase
+5881; 0 0 SEQUENCE OWNED BY public localizationTranslations_id_seq nocobase
+256; 1259 24739 TABLE public main_desktopRoutes_path nocobase
+282; 1259 24920 TABLE public main_mobileRoutes_path nocobase
+231; 1259 24579 TABLE public migrations nocobase
+281; 1259 24911 TABLE public mobileRoutes nocobase
+280; 1259 24910 SEQUENCE public mobileRoutes_id_seq nocobase
+5882; 0 0 SEQUENCE OWNED BY public mobileRoutes_id_seq nocobase
+327; 1259 25234 TABLE public notificationChannels nocobase
+329; 1259 25249 TABLE public notificationInAppMessages nocobase
+328; 1259 25242 TABLE public notificationSendLogs nocobase
+303; 1259 25064 TABLE public otpRecords nocobase
+237; 1259 24610 TABLE public roles nocobase
+257; 1259 24745 TABLE public rolesDesktopRoutes nocobase
+283; 1259 24926 TABLE public rolesMobileRoutes nocobase
+239; 1259 24624 TABLE public rolesResources nocobase
+241; 1259 24634 TABLE public rolesResourcesActions nocobase
+240; 1259 24633 SEQUENCE public rolesResourcesActions_id_seq nocobase
+5883; 0 0 SEQUENCE OWNED BY public rolesResourcesActions_id_seq nocobase
+243; 1259 24647 TABLE public rolesResourcesScopes nocobase
+242; 1259 24646 SEQUENCE public rolesResourcesScopes_id_seq nocobase
+5884; 0 0 SEQUENCE OWNED BY public rolesResourcesScopes_id_seq nocobase
+238; 1259 24623 SEQUENCE public rolesResources_id_seq nocobase
+5885; 0 0 SEQUENCE OWNED BY public rolesResources_id_seq nocobase
+288; 1259 24965 TABLE public rolesUischemas nocobase
+236; 1259 24604 TABLE public rolesUsers nocobase
+275; 1259 24872 TABLE public sequences nocobase
+274; 1259 24871 SEQUENCE public sequences_id_seq nocobase
+5886; 0 0 SEQUENCE OWNED BY public sequences_id_seq nocobase
+279; 1259 24894 TABLE public storages nocobase
+5887; 0 0 COMMENT public COLUMN storages.title nocobase
+5888; 0 0 COMMENT public COLUMN storages.type nocobase
+5889; 0 0 COMMENT public COLUMN storages.options nocobase
+5890; 0 0 COMMENT public COLUMN storages.rules nocobase
+5891; 0 0 COMMENT public COLUMN storages.path nocobase
+5892; 0 0 COMMENT public COLUMN storages."baseUrl" nocobase
+5893; 0 0 COMMENT public COLUMN storages."default" nocobase
+278; 1259 24893 SEQUENCE public storages_id_seq nocobase
+5894; 0 0 SEQUENCE OWNED BY public storages_id_seq nocobase
+285; 1259 24933 TABLE public systemSettings nocobase
+284; 1259 24932 SEQUENCE public systemSettings_id_seq nocobase
+5895; 0 0 SEQUENCE OWNED BY public systemSettings_id_seq nocobase
+355; 1259 26325 TABLE public t_28b7c20s21c nocobase
+354; 1259 26319 TABLE public t_32sxkpbamlo nocobase
+348; 1259 26240 TABLE public t_6m8khnilaty nocobas

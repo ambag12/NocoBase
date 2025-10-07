@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-field-m2m-array/src/client';

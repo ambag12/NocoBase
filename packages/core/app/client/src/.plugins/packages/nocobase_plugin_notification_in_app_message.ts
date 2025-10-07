@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-notification-in-app-message/src/client';

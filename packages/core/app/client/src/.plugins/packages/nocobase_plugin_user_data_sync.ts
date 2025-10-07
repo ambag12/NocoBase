@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-user-data-sync/src/client';

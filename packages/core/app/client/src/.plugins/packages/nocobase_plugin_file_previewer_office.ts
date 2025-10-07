@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-file-previewer-office/src/client';

@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-async-task-manager/src/client';

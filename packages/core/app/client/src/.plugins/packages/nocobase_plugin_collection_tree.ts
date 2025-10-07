@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-collection-tree/src/client';

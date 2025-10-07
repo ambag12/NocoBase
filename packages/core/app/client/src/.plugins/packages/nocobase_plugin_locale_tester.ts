@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-locale-tester/src/client';

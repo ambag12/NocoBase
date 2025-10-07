@@ -1,0 +1,1 @@
+export { default } from '../../../../../../plugins/@nocobase/plugin-notification-manager/src/client';
